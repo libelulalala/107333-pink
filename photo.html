@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Пинк</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <a class="page-header__logo">
+                <img src="img/logo.png" width="75" height="22" alt="HTML Academy: Пинк">
+            </a>
+            <nav class="main-nav">
+                <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+                <div class="main-nav__wrapper main-nav__wrapper--closed">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#">Главная</a></li>
+                        <li class="main-nav__item"><span>Фотографии</span></li>
+                        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                        <li class="main-nav__item"><a href="http://www.htmlacademy.ru/">HTML Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="page-header__title">Фотографии пользователей</h1>
+        </header>
+
+        <section class="feed">
+          <p class="feed__intro">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
+
+          <div class="post post--of-the-day">
+            <img class="post__image" width="280" height="180" src="img/panorama.jpg" alt="Фотография пользователя">
+            <a class="post__author">Анна</a>
+            <span class="post__date">(5 минут назад)</span>
+            <p class="post__text">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+              трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <span class="post__like">Нравится: 215</span>
+          </div>
+
+          <div class="post">
+            <img class="post__image" width="280" height="180" src="img/car.jpg" alt="Фотография пользователя">
+            <a class="post__author">Левон</a>
+            <span class="post__date">(5 часов назад)</span>
+            <p class="post__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <span class="post__like">Нравится: 356</span>
+          </div>
+
+          <div class="post">
+            <img class="post__image" width="280" height="180" src="img/drums.jpg" alt="Фотография пользователя">
+            <a class="post__author">Антон</a>
+            <span class="post__date">(12 часов назад)</span>
+            <p class="post__text">
+              Соседи будут рады!
+            </p>
+            <span class="post__like">Нравится: 666</span>
+          </div>
+
+          <div class="post">
+            <img class="post__image" width="280" height="180" src="img/ceiling.jpg" alt="Фотография пользователя">
+            <a class="post__author">Борис</a>
+            <span class="post__date">(20 часов назад)</span>
+            <p class="post__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <span class="post__like">Нравится: 215</span>
+          </div>
+
+          <div class="post">
+            <img class="post__image" width="280" height="180" src="img/melon.jpg" alt="Фотография пользователя">
+            <a class="post__author">Сергей</a>
+            <span class="post__date">(25 часов назад)</span>
+            <p class="post__text">
+              Самая кубанская в мире!
+            </p>
+            <span class="post__like">Нравится: 4</span>
+          </div>
+
+          <div class="post">
+            <img class="post__image" width="280" height="180" src="img/mountain.jpg" alt="Фотография пользователя">
+            <a class="post__author">Максим</a>
+            <span class="post__date">(40 часов назад)</span>
+            <p class="post__text">
+              Где снег-то?
+            </p>
+            <span class="post__like">Нравится: 150</span>
+          </div>
+
+          <div class="post">
+            <img class="post__image" width="280" height="180" src="img/sky.jpg" alt="Фотография пользователя">
+            <a class="post__author">Надежда</a>
+            <span class="post__date">(45 часов назад)</span>
+            <p class="post__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <span class="post__like">Нравится: 2560</span>
+          </div>
+          <p class="feed__conclusion">
+            Затмите их всех!
+            Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </section>
+
+        <article class="photo-redactor">
+            <img class="photo-redactor__image" width="280" height="374" src="img/winter.jpg" alt="Ваша фотография">
+
+          <button class="photo-redactor__btn photo-redactor__btn--crop" type="button" name="button-crop"></button>
+          <button class="photo-redactor__btn photo-redactor__btn--fill" type="button" name="button-fill"></button>
+          <button class="photo-redactor__btn photo-redactor__btn--contrast" type="button" name="button-contrast"></button>
+          <input type="range" min="1" max="100">
+
+          <button type="submit" class="btn btn--write">Отправить</button>
+          <button type="reset" class="btn btn--cancel" value="cancel">Отмена</button>
+        </article>
+
+        <footer class="page-footer">
+          <img src="logo-photo.jpg" alt="Pink">
+          <section class="social">
+            <div class="social-links">
+              <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
+              <a class="social-links__item social-links__item--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social-links__item social-links__item--youtube" href="#">Мы на Ютубе</a>
+            </div>
+          </section>
+          <section class="page-footer__copyright">
+            Разработано:
+            <a  class="page-footer__copyright-link" href="#"></a>
+          </section>
+        </footer>
+
+    </body>
+</html>
