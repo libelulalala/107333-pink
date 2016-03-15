@@ -1,3 +1,46 @@
 .page-header {
-  outline: 2px solid green;
+  background-color: @darkblue;
+  background-image: url("../img/bg-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 700px auto;
+  min-height: 730px;
+}
+
+.page-header__wrapper{
+  .container;
+  .clearfix;
+}
+
+@media @mobile-widths-only {
+   .page-header__title--index{
+     display: none;
+   }
+}
+
+@media @tablet-widths {
+  .page-header {
+    background-image: url("../img/bg-back-tablet.jpg");
+    background-size:  1200px auto;
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    background-image: url("../img/bg-back-desktop.jpg");
+    background-size: 1200px auto;
+    max-height: 850px;
+  }
+  .page-header__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__logo {
+  width: 75px;
+  height: 22px;
+}
+.page-header__title{
+  .container;
 }
