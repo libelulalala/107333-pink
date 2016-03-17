@@ -9,23 +9,24 @@
     <body>
       <header class="page-header">
         <div class="page-header__wrapper">
-          <div class="page-header__logo">
-              <img src="img/logo.png" width="75" height="22" alt="HTML Academy: Пинк">
+          <div class="page-header__top">
+            <div class="page-header__logo">
+                <img src="img/logo.png" width="75" height="22" alt="HTML Academy: Пинк">
+            </div>
+            <nav class="main-nav">
+                <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+                <div class="main-nav__wrapper main-nav__wrapper--closed">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+                        <li class="main-nav__item"><a>Конкурс</a></li>
+                        <li class="main-nav__item"><a href="http://www.htmlacademy.ru/">HTML Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
           </div>
-          <nav class="main-nav">
-              <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
-              <div class="main-nav__wrapper main-nav__wrapper--closed">
-                  <ul class="main-nav__list">
-                      <li class="main-nav__item"><a href="index.html">Главная</a></li>
-                      <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-                      <li class="main-nav__item"><a>Конкурс</a></li>
-                      <li class="main-nav__item"><a href="http://www.htmlacademy.ru/">HTML Academy</a></li>
-                  </ul>
-              </div>
-          </nav>
-        </div>
           <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
+        </div>
       </header>
         <article class="competition">
           <p class="competition__intro">
@@ -99,7 +100,10 @@
         </article>
 
         <footer class="page-footer">
-          <img src="logo-photo.jpg" alt="Pink">
+          <div class="logo">
+            <img src="logo-photo.jpg" alt="Pink">
+          </div>
+
           <section class="social">
             <div class="social-links">
               <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
@@ -107,9 +111,10 @@
               <a class="social-links__item social-links__item--youtube" href="#">Мы на Ютубе</a>
             </div>
           </section>
-          <section class="page-footer__copyright">
+
+          <section class="copyright">
             Разработано:
-            <a  class="page-footer__copyright-link" href="#"></a>
+            <a  class="copyright__link" href="#"></a>
           </section>
         </footer>
     </body>

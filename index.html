@@ -7,66 +7,81 @@
         <title>HTML Academy: Пинк</title>
     </head>
     <body>
-        <header class="page-header">
+        <header class="page-header page-header--main">
           <div class="page-header__wrapper">
-            <div class="page-header__logo">
-                <img src="img/logo.png" width="75" height="22" alt="HTML Academy: Пинк">
-            </div>
-            <nav class="main-nav">
-                <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
-                <div class="main-nav__wrapper main-nav__wrapper--closed">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item"><a>Главная</a></li>
-                        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-                        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                        <li class="main-nav__item"><a href="http://www.htmlacademy.ru/">HTML Academy</a></li>
-                    </ul>
-                </div>
-            </nav>
-          </div>
-          <section class="download-app">
-              <h1 class="page-header__title page-header__title--index">Взгляните на жизнь иначе!</h1>
-              <a href="#" class=""></a>
-              <div class="download-app__links">
-                  <a class="download-app__link download-app__link--apple" href="#">Приложение для iPhone, iPad</a>
-                  <a class="download-app__link download-app__link--android" href="#">Приложение для Android</a>
-                  <a class="download-app__link download-app__link--windows" href="#">Приложение для Windows</a>
+            <div class="page-header__top">
+              <div class="page-header__logo">
+                  <img src="img/logo.png" width="75" height="22" alt="HTML Academy: Пинк">
               </div>
-              <p class="download-app__paragraph">
-                  Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-              </p>
-          </section>
+              <nav class="main-nav">
+                  <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+                  <div class="main-nav__wrapper main-nav__wrapper--closed">
+                      <ul class="main-nav__list">
+                          <li class="main-nav__item"><a>Главная</a></li>
+                          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+                          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                          <li class="main-nav__item"><a href="http://www.htmlacademy.ru/">HTML Academy</a></li>
+                      </ul>
+                  </div>
+              </nav>
+            </div>
+
+            <div class="page-header__left-column">
+              <h1 class="page-header__title page-header__title--main">Взгляните на жизнь иначе!</h1>
+              <section class="download-app">
+                <a href="#" class=""></a>
+                <div class="download-app__links">
+                    <a class="download-app__link download-app__link--apple" href="#">Приложение для iPhone, iPad</a>
+                    <a class="download-app__link download-app__link--android" href="#">Приложение для Android</a>
+                    <a class="download-app__link download-app__link--windows" href="#">Приложение для Windows</a>
+                </div>
+                <p class="download-app__paragraph">
+                    Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+                </p>
+              </section>
+            </div>
+          </div>
         </header>
 
         <section class="advantages">
-            <header class="advantages__header">
-                <p class="advantages__intro">Устали от серости мегаполиса?</p>
-                <p class="advantages__intro">Нам есть, что вам предложить!</p>
+          <div class="advantages__wrapper">
+            <header class="advantages__intro">
+                <p>Устали от серости мегаполиса?</p>
+                <p>Нам есть, что вам предложить!</p>
             </header>
-            <h2 class="advantages__title">Поднимает настроение</h2>
-            <p class="advantages__text">
-                Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-            </p>
+            <div class="advantages__items">
+              <div class="advantages__item">
+                <h2 class="advantages__title">Поднимает настроение</h2>
+                <p class="advantages__text">
+                    Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+                </p>
+              </div>
 
-            <h2 class="advantages__title">Меняет мир вокруг</h2>
-            <p class="advantages__text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
+              <div class="advantages__item">
+                <h2 class="advantages__title">Меняет мир вокруг</h2>
+                <p class="advantages__text">
+                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </div>
 
-            <h2 class="advantages__title">Заводит новых друзей</h2>
-            <p class="advantages__text">
-                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-            </p>
+              <div class="advantages__item">
+                <h2 class="advantages__title">Заводит новых друзей</h2>
+                <p class="advantages__text">
+                    Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="slider-reviews">
           <div class="slider-reviews__wrapper">
-              <input class="slider-reviews__toggle" type="radio" id="reviews-toggle-1" name="reviews-toggle" checked>
-              <input class="slider-reviews__toggle" type="radio" id="reviews-toggle-2" name="reviews-toggle">
-              <input class="slider-reviews__toggle" type="radio" id="reviews-toggle-3" name="reviews-toggle">
-
+            <input class="slider-reviews__toggle" type="radio" id="reviews-toggle-1" name="reviews-toggle" checked>
+            <input class="slider-reviews__toggle" type="radio" id="reviews-toggle-2" name="reviews-toggle">
+            <input class="slider-reviews__toggle" type="radio" id="reviews-toggle-3" name="reviews-toggle">
+            <div class="slider-reviews__items">
               <blockquote class="slider-reviews__item">
-                <cite class="slider-reviews__title">Николай Петров</cite>
+                <cite class="slider-reviews__title">Николай Петров <small>25 лет, водитель трамвая</small></cite>
                 <p>
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                   А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -74,7 +89,7 @@
               </blockquote>
 
               <blockquote class="slider-reviews__item">
-                <cite class="slider-reviews__title">Николай Петров</cite>
+                <cite class="slider-reviews__title">Николай Петров <small>25 лет, водитель трамвая</small></cite>
                 <p>
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                   А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -82,110 +97,146 @@
               </blockquote>
 
               <blockquote class="slider-reviews__item">
-                <cite class="slider-reviews__title">Николай Петров</cite>
+                <cite class="slider-reviews__title">Николай Петров <small>25 лет, водитель трамвая</small></cite>
                 <p>
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                   А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </blockquote>
+            </div>
 
-              <div class="slider-reviews__controls">
-                  <label class="slider-reviews__control slider-reviews__control--1" for="reviews-toggle-1"></label>
-                  <label class="slider-reviews__control slider-reviews__control--2" for="reviews-toggle-2"></label>
-                  <label class="slider-reviews__control slider-reviews__control--3" for="reviews-toggle-3"></label>
-              </div>
+            <div class="slider-reviews__controls">
+                <label class="slider-reviews__control slider-reviews__control--1" for="reviews-toggle-1"></label>
+                <label class="slider-reviews__control slider-reviews__control--2" for="reviews-toggle-2"></label>
+                <label class="slider-reviews__control slider-reviews__control--3" for="reviews-toggle-3"></label>
+            </div>
+          </div>
+        </section>
+
+        <section class="research">
+          <div class="research__wrapper">
+            <h2 class="research__title">Эффект на 24 часа!</h2>
+            <p class="research__text">
+              Британские ученые провели исследования
+              и&nbsp;доказали, что&nbsp;положительный&nbsp;эффект
+              от&nbsp;использования приложения длится
+              целые&nbsp;сутки!
+            </p>
+            <a  class="research__link"href="#">Узнать больше об исследовании</a>
           </div>
         </section>
 
         <section class="slider-tariffs">
+          <input class="slider-tariffs__toggle slider-tariffs__toggle--1" type="radio" id="tariffs-toggle-1" name="tariffs-toggle">
+          <input class="slider-tariffs__toggle slider-tariffs__toggle--2" type="radio" id="tariffs-toggle-2" name="tariffs-toggle" checked>
+          <input class="slider-tariffs__toggle slider-tariffs__toggle--3" type="radio" id="tariffs-toggle-3" name="tariffs-toggle">
           <div class="slider-tariffs__wrapper">
-            <input class="slider-tariffs__toggle" type="radio" id="tariffs-toggle-1" name="tariffs-toggle">
-            <input class="slider-tariffs__toggle" type="radio" id="tariffs-toggle-2" name="tariffs-toggle" checked>
-            <input class="slider-tariffs__toggle" type="radio" id="tariffs-toggle-3" name="tariffs-toggle">
 
-            <div class="slider-tariffs__item">
-              <table>
-                <caption class="slider-tariffs__title">База <span class="slider-tariffs__price"></span>1,99 USD</caption>
+
+              <table class="slider-tariffs__table">
+                <th class="slider-tariffs__title slider-tariffs__title--empty"></th>
+                <th class="slider-tariffs__title">База <span class="slider-tariffs__price"></span>1,99 USD</th>
+                <th class="slider-tariffs__title">Стандарт <span class="slider-tariffs__price"></span>3,99 USD</th>
+                <th class="slider-tariffs__title">Анлим <span class="slider-tariffs__price"></span>9,99 USD</th>
                 <tr>
-                    <td>Розовый фильтр</td>
-                    <td></td>
+                  <td class="slider-tariffs__heading slider-tariffs__heading--desktop">Розовый фильтр</td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--yes">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Розовый фильтр</span>
+                  </td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--no">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Розовый фильтр</span>
+                  </td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--no">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Розовый фильтр</span>
+                  </td>
                 </tr>
                 <tr>
-                    <td>Смайлики</td>
-                    <td></td>
+                  <td class="slider-tariffs__heading slider-tariffs__heading--desktop">Смайлики</td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--yes">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Смайлики</span>
+                  </td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--yes">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Смайлики</span>
+                  </td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--no">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Смайлики</span>
+                  </td>
                 </tr>
                 <tr>
-                    <td>Комментарии</td>
-                    <td></td>
+                  <td class="slider-tariffs__heading slider-tariffs__heading--desktop">Комментарии</td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--yes">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Комментарии</span>
+                  </td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--yes">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Комментарии</span>
+                  </td>
+
+                  <td class="slider-tariffs__cell slider-tariffs__cell--yes">
+                    <span class="slider-tariffs__heading slider-tariffs__heading--mobile">Комментарии</span>
+                  </td>
                 </tr>
               </table>
-            </div>
-
-            <div class="slider-tariffs__item">
-              <table>
-                <caption class="slider-tariffs__title">Стандарт <span class="slider-tariffs__price"></span>3,99 USD</caption>
-                <tr>
-                    <td>Розовый фильтр</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Смайлики</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Комментарии</td>
-                    <td></td>
-                </tr>
-              </table>
-            </div>
-
-            <div class="slider-tariffs__item">
-              <table>
-                <caption class="slider-tariffs__title">Анлим <span class="slider-tariffs__price"></span>9,99 USD</caption>
-                <tr>
-                    <td>Розовый фильтр</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Смайлики</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Комментарии</td>
-                    <td></td>
-                </tr>
-              </table>
-            </div>
 
             <div class="slider-tariffs__controls">
-                <label class="slider-tariffs__control slider-tariffs__control--1" for="tariffs-toggle-1"></label>
-                <label class="slider-tariffs__control slider-tariffs__control--2" for="tariffs-toggle-2"></label>
-                <label class="slider-tariffs__control slider-tariffs__control--3" for="tariffs-toggle-3"></label>
+              <label class="slider-tariffs__control slider-tariffs__control--1" for="tariffs-toggle-1"></label>
+              <label class="slider-tariffs__control slider-tariffs__control--2" for="tariffs-toggle-2"></label>
+              <label class="slider-tariffs__control slider-tariffs__control--3" for="tariffs-toggle-3"></label>
             </div>
           </div>
         </section>
 
         <footer class="main-footer">
-          <div id="y-map" class="main-footer__map">
+          <div class="main-footer__wrapper">
             <div class="contacts">
               <h3 class="contacts__intro">Остались вопросы?<br>Свяжитесь с нами!</h3>
 
-              <div class="contacts__item">
-                <h4 class="contacts__title">Звоните:</h4>
-                <span class="contacts__info">+7 (812) 555-66-66</span>
-              </div>
+              <div class="contacts__items">
+                <div class="contacts__item">
+                  <h4 class="contacts__title">Звоните:</h4>
+                  <span class="contacts__info">+7 (812) 555-66-66</span>
+                </div>
 
-              <div class="contacts__item">
-                <h4 class="contacts__title">Пишите:</h4>
-                <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </div>
+                <div class="contacts__item">
+                  <h4 class="contacts__title">Пишите:</h4>
+                  <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </div>
 
-              <div class="contacts__item">
-                <h4 class="contacts__title">Приезжайте в гости:</h4>
-                <span class="contacts__info">ул. Большая <br>Конюшенная, 19/8</span>
+                <div class="contacts__item">
+                  <h4 class="contacts__title">Приезжайте в гости:</h4>
+                  <span class="contacts__info">ул. Большая <br>Конюшенная, 19/8</span>
+                </div>
               </div>
             </div>
+            <div id="y-map" class="main-footer__map"></div>
+
+            <div class="main-footer__links">
+              <div class="logo">
+                <img src="logo-photo.jpg" alt="Pink">
+              </div>
+
+              <section class="social">
+                <div class="social-links">
+                  <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
+                  <a class="social-links__item social-links__item--facebook" href="#">Мы в Фейсбуке</a>
+                  <a class="social-links__item social-links__item--youtube" href="#">Мы на Ютубе</a>
+                </div>
+              </section>
+
+              <section class="copyright">
+                Разработано:
+                <a  class="copyright__link" href="#"></a>
+              </section>
+            </div>
           </div>
+
         </footer>
 
     </body>

@@ -1,1 +1,105 @@
+.slider-tariffs {
+  overflow: hidden;
+  .container;
+}
 
+.slider-tariffs__wrapper {
+  width: 840px;
+}
+
+.slider-tariffs__table{
+  margin: 0 20px;
+}
+
+.slider-tariffs__title{
+  min-width: 280px;
+}
+
+.slider-tariffs__heading {
+}
+
+.slider-tariffs__title--empty,
+.slider-tariffs__heading--desktop {
+  display: none;
+}
+.slider-tariffs__heading--mobile {
+
+}
+
+.slider-tariffs__cell {
+
+}
+.slider-tariffs__toggle{
+  display: none;
+}
+.slider-tariffs__toggle--1:checked ~ .slider-tariffs__wrapper{
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+.slider-tariffs__toggle--2:checked ~ .slider-tariffs__wrapper{
+  -webkit-transform: translate(-33.33%);
+      -ms-transform: translate(-33.33%);
+          transform: translate(-33.33%);
+}
+
+.slider-tariffs__toggle--3:checked ~ .slider-tariffs__wrapper{
+  -webkit-transform: translate(-66.66%);
+      -ms-transform: translate(-66.66%);
+          transform: translate(-66.66%);
+}
+
+.slider-tariffs__cell--yes  {
+
+}
+.slider-tariffs__cell--no {
+
+}
+
+@media @tablet-widths {
+
+  .slider-tariffs__toggle--1:checked ~ .slider-tariffs__wrapper,
+  .slider-tariffs__toggle--2:checked ~ .slider-tariffs__wrapper,
+  .slider-tariffs__toggle--3:checked ~ .slider-tariffs__wrapper {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .slider-tariffs__table{
+    margin: 0;
+  }
+  .slider-tariffs__title--empty,
+  .slider-tariffs__heading--desktop {
+    display: table-cell;
+  }
+  .slider-tariffs__heading--mobile {
+    display: none;
+  }
+  .slider-tariffs__title{
+    min-width: 160px;
+  }
+}
+
+@media @desktop-widths {
+  .slider-tariffs__toggle--1:checked ~ .slider-tariffs__wrapper,
+  .slider-tariffs__toggle--2:checked ~ .slider-tariffs__wrapper,
+  .slider-tariffs__toggle--3:checked ~ .slider-tariffs__wrapper {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .slider-tariffs__title--empty,
+  .slider-tariffs__heading--desktop {
+    display: table-cell;
+  }
+  .slider-tariffs__heading--mobile {
+    display: none;
+  }
+  .slider-tariffs__title{
+    min-width: 236px;
+  }
+  .slider-tariffs__table{
+    margin: 0;
+  }
+}
