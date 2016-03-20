@@ -29,93 +29,157 @@
         </div>
       </header>
         <article class="competition">
-          <p class="competition__intro">
-              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          </p>
+          <div class="competition__wrapper">
+            <p class="competition__intro">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            </p>
 
-          <form class="competition-form"  action="https://echo.pink.ru" method="post" name="filters">
+            <form class="competition-form"  action="https://echo.pink.ru" method="post" name="filters">
 
-            <section class="competition-form__item competition-form__item--full-name">
-              <label class="competition-form__title" for="first-name">Имя</label>
-              <input  class="competition-form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
+              <section class="competition-form__section competition-form__section--full-name">
+                <div class="competition-form__item">
+                  <label class="competition-form__title" for="first-name">Имя</label>
+                  <input  class="competition-form__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
+                </div>
 
-              <label class="competition-form__title" for="last-name">Фамилия</label>
-              <input  class="competition-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
+                <div class="competition-form__item">
+                  <label class="competition-form__title" for="last-name">Фамилия</label>
+                  <input  class="competition-form__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
+                </div>
 
-              <label class="competition-form__title" for="patronymic">Отчество</label>
-              <input  class="competition-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
-            </section>
+                <div class="competition-form__item">
+                  <label class="competition-form__title" for="patronymic">Отчество</label>
+                  <input  class="competition-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
+                </div>
+              </section>
 
-            <section class="competition-form__item competition-form__item--achievements">
-              <h2 class="competition-form__title">Ваши безбашенные достижения в путешествии</h2>
-              <input  class="competition-form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
-              <label class="competition-form__label" for="selfie">Сделал селфи с акулой</label>
+              <section class="competition-form__section competition-form__section--achievements">
+                <h2 class="competition-form__title">Ваши безбашенные достижения в путешествии</h2>
+                <div class="competition-form__wrapper">
+                  <div class="competition-form__item">
+                    <label class="competition-form__label" for="selfie">
+                      <input  class="competition-form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                      Сделал селфи с акулой
+                    </label>
+                  </div>
 
-              <input  class="competition-form__checkbox" type="checkbox" name="burned" id="burned" checked>
-              <label class="competition-form__label" for="burned">Обгорел на пляже</label>
+                  <div class="competition-form__item">
+                    <label class="competition-form__label" for="burned">
+                      <input  class="competition-form__checkbox" type="checkbox" name="burned" id="burned" checked>
+                      Обгорел на пляже
+                    </label>
+                  </div>
 
-              <input  class="competition-form__checkbox" type="checkbox" name="norris" id="norris">
-              <label class="competition-form__label" for="norris">Видел Чака Норриса</label>
+                  <div class="competition-form__item">
+                    <label class="competition-form__label" for="norris">
+                      <input class="competition-form__checkbox" type="checkbox" name="norris" id="norris">
+                      Видел Чака Норриса
+                    </label>
+                  </div>
 
-              <input  class="competition-form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-              <label class="competition-form__label" for="souvenirs">Накупил сувениров</label>
+                  <div class="competition-form__item">
+                    <label class="competition-form__label" for="souvenirs">
+                      <input  class="competition-form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                      Накупил сувениров
+                    </label>
+                  </div>
 
-              <input  class="competition-form__checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="competition-form__label" for="tower">Удержал башню</label>
+                  <div class="competition-form__item">
+                    <label class="competition-form__label" for="tower">
+                      <input  class="competition-form__checkbox" type="checkbox" name="tower" id="tower" checked>
+                      Удержал башню
+                    </label>
+                  </div>
 
-              <input  class="competition-form__checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="competition-form__label" for="hotel">Разгромил отель</label>
-            </section>
+                  <div class="competition-form__item">
+                    <label class="competition-form__label" for="hotel">
+                      <input  class="competition-form__checkbox" type="checkbox" name="hotel" id="hotel">
+                      Разгромил отель
+                    </label>
+                  </div>
+                </div>
 
-            <section class="competition-form__item competition-form__item--contacts">
-              <label class="competition-form__title" for="telephone">Номерок телефончика</label>
-              <input  class="competition-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста" required>
 
-              <label class="competition-form__title" for="email">Адресок почты</label>
-              <input  class="competition-form__field" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required>
-            </section>
+              </section>
 
-            <section class="competition-form__item competition-form__item--app-info">
-              <h2 class="competition-form__title">С каким приложением путешествовали?</h2>
+              <section class="competition-form__section competition-form__section--contacts">
+                <h2 class="competition-form__title competition-form__title--deskop">Контактная информация</h2>
+                <div class="competition-form__wrapper">
+                  <div class="competition-form__item">
+                    <label class="competition-form__title competition-form__title--mobile" for="telephone">Номерок телефончика</label>
+                    <input  class="competition-form__field" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста" required>
+                    <label class="competition-form__title competition-form__title--deskop" for="telephone">Номер телефона</label>
+                  </div>
+                  <div class="competition-form__item">
+                    <label class="competition-form__title competition-form__title--mobile" for="email">Адресок почты</label>
+                    <input  class="competition-form__field" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required>
+                    <label class="competition-form__title competition-form__title--deskop" for="email">Адрес почты</label>
+                  </div>
+                </div>
 
-              <input class="competition-form__radio" type="radio" name="input-radio" id="ios" checked>
-              <label class="competition-form__label" for="ios">Pink для iOS</label>
+              </section>
 
-              <input class="competition-form__radio" type="radio" name="input-radio" id="android">
-              <label class="competition-form__label" for="android">Pink на Android</label>
+              <section class="competition-form__section competition-form__section--app-info">
+                <h2 class="competition-form__title">С каким приложением путешествовали?</h2>
 
-              <input class="competition-form__radio" type="radio" name="input-radio" id="windows">
-              <label class="competition-form__label" for="windows">Windows Phone</label>
-            </section>
+                <label class="competition-form__label" for="ios">
+                  <input class="competition-form__radio" type="radio" name="input-radio" id="ios" checked>
+                  Pink для iOS
+                </label>
 
-            <section class="competition-form__item competition-form__item--description">
-              <label class="competition-form__title" for="description-text">Опишите свои эмоции</label>
-              <textarea name="text" id="description-text" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </section>
+                <label class="competition-form__label" for="android">
+                  <input class="competition-form__radio" type="radio" name="input-radio" id="android">
+                  Pink на Android
+                </label>
 
-            <button type="submit" class="btn competition-form__btn">Отправить форму</button>
+                <label class="competition-form__label" for="windows">
+                  <input class="competition-form__radio" type="radio" name="input-radio" id="windows">
+                  Windows Phone
+                </label>
+              </section>
 
-          </form>
-          <small class="competition__note"><sub>*</sub> — обязательные поля</small>
+              <section class="competition-form__section competition-form__section--description">
+                <label class="competition-form__title" for="description-text">Опишите свои эмоции</label>
+                <textarea class="competition-form__field" name="text" id="description-text" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </section>
+
+              <div class="competition-form__wrapper">
+                <div class="">
+                  <button type="submit" class="btn competition-form__btn">Отправить форму</button>
+                </div>
+                <div class="competition__note">
+                  <small><sub>*</sub> — обязательные <span class="competition-form__text competition-form__text--desktop">для заполнения</span> поля</small>
+                </div>
+              </div>
+
+
+
+            </form>
+
+
+          </div>
         </article>
 
+
         <footer class="page-footer">
-          <div class="logo">
-            <img src="logo-photo.jpg" alt="Pink">
-          </div>
-
-          <section class="social">
-            <div class="social-links">
-              <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
-              <a class="social-links__item social-links__item--facebook" href="#">Мы в Фейсбуке</a>
-              <a class="social-links__item social-links__item--youtube" href="#">Мы на Ютубе</a>
+          <div class="page-footer__wrapper">
+            <div class="logo">
+              <img src="logo-photo.jpg" alt="Pink">
             </div>
-          </section>
 
-          <section class="copyright">
-            Разработано:
-            <a  class="copyright__link" href="#"></a>
-          </section>
+            <section class="social">
+              <div class="social-links">
+                <a class="social-links__item social-links__item--twitter" href="#">Мы в Твиттере</a>
+                <a class="social-links__item social-links__item--facebook" href="#">Мы в Фейсбуке</a>
+                <a class="social-links__item social-links__item--youtube" href="#">Мы на Ютубе</a>
+              </div>
+            </section>
+
+            <section class="copyright">
+              Разработано:
+              <a  class="copyright__link" href="#"></a>
+            </section>
+          </div>
         </footer>
     </body>
 </html>

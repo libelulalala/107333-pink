@@ -1,0 +1,65 @@
+.post{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.post--of-the-day{
+
+}
+.post__image--panorama{
+  min-width: 320px;
+}
+.post--of-the-day img{
+
+}
+.post img{
+  width: 100%;
+}
+.post--of-the-day img{
+
+}
+.post__image{
+
+}
+.post__author{
+
+}
+.post__date{
+
+}
+.post__text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.post__comment{
+
+}
+.post__like{
+
+}
+@media @tablet-widths {
+
+  .post{
+    max-width: 300px;
+  }
+
+  .post--of-the-day{
+    min-width: 100%;
+
+    .post__like{
+      order: -1;
+      align-self: flex-end;
+    }
+  }
+  .post__image--panorama{
+  min-width: 700px;
+  }
+}
+
+@media @desktop-widths {
+  .post__image--panorama{
+  min-width: 1200px;
+  }
+}

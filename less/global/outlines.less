@@ -5,7 +5,9 @@
 .feed,
 .slider-reviews,
 .slider-tariffs,
-.research  {
+.research,
+.page-footer,
+.photo-redactor  {
   outline: 2px solid green;
 
   & > * {
@@ -21,6 +23,21 @@
       outline: 2px solid violet;
   }
 }
+.photo-redactor{
+  & > * > *  > * {
+    outline: 2px solid violet;
+  }
+}
+.competition-form,
+.post__wrapper,
+.photo-redactor{
+  & > * {
+      outline: 2px solid orange;
+  }
+  & > * > * {
+      outline: 1px solid darkblue;
+  }
+}
 .btn{
  outline: 2px solid green;
 }
@@ -33,9 +50,6 @@
  outline:2px solid green;
 }
 
-.page-footer {
-  outline: 2px solid green;
-}
 
 .page-footer {
   outline: 2px solid green;
