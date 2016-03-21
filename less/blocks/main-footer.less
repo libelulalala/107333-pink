@@ -1,3 +1,50 @@
-.main-footer{
- outline:2px solid green;
+.main-footer {
+  text-align: center;
+}
+.main-footer__wrapper{
+  .container;
+}
+.main-footer__map {
+
+}
+.contacts {
+
+}
+.contacts__intro {
+
+}
+.contacts__item {
+
+}
+.contacts__title {
+
+}
+.contacts__info {
+
+}
+.main-footer__links{
+  display: none;
+}
+@media @tablet-widths {
+  .contacts__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+  .contacts__item{
+    min-width: 50%;
+  }
+  .main-footer__links{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media @desktop-widths {
+  .contacts__item{
+    min-width: 33.3333%;
+  }
+  .main-footer__links{
+    display: flex;
+    justify-content: space-between;
+  }
 }

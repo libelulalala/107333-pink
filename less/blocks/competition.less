@@ -1,3 +1,214 @@
-.competition {
-  outline: 2px solid green;
+.competition__wrapper {
+ .container;
+}
+
+.competition-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__text--desktop {
+    display: none;
+  }
+
+  &__title--deskop {
+     display: none;
+   }
+}
+
+.competition-form__section--full-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+   .competition-form__item{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.competition-form__section--contacts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .competition-form__item{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.competition-form__section--app-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.competition-form__section--description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+
+  .competition-form__field {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+
+@media @tablet-widths {
+
+.competition-form{
+  &__btn {
+    width: 300px;
+  }
+
+  &__title--mobile{
+    display: none;
+  }
+
+  &__title--deskop{
+    display: block;
+   }
+
+   &__wrapper{
+     width: 100%;
+     flex-direction: row;
+     flex-wrap: nowrap;
+   justify-content: space-between;
+
+     &__note {
+       width: 27%;
+       display: flex;
+     }
+   }
+}
+
+
+.competition-form__section--full-name {
+  flex-direction: column;
+  order: -3;
+
+  .competition-form__item {
+    display: flex;
+    flex-direction: row;
+
+    .competition-form__field {
+        display: flex;
+        width: 100%;
+      }
+  }
+}
+
+.competition-form__section--app-info {
+  order: -2;
+  width: 71.429%;
+}
+
+.competition-form__section--achievements {
+  width: 71.429%;
+
+  .competition-form__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.competition-form__section--contacts {
+  order: -1;
+  width: 71.429%;
+  flex-direction: column;
+}
+
+.competition-form__section--description {
+  flex-direction: column;
+  width: 100%;
+
+  .competition-form__field {
+    width: 71.429%;
+  }
+}
+
+.competition-form__section--contacts{
+  .competition-form__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+}
+
+
+@media @desktop-widths {
+  .competition-form__text--desktop{
+    display: inline;
+  }
+
+.competition-form__section--full-name {
+  width: 50%;
+
+  .competition-form__item{
+    justify-content: flex-start;
+
+  .competition-form__field {
+    display: flex;
+    width: 100%;
+  }
+}
+}
+.competition-form__section--app-info {
+   width: 50%;
+}
+
+.competition-form__section--achievements{
+  width: 100%;
+
+  .competition-form__wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+      .competition-form__item{
+      width: 33.333%;
+    }
+  }
+}
+
+.competition-form__section--description {
+  display: flex;
+  align-items: center;
+
+  .competition-form__field {
+    width: 68.333%;
+  }
+}
+
+.competition-form__section--contacts{
+  width: 100%;
+
+  .competition-form__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .competition-form__item {
+      width: 50%;
+    }
+  }
+}
 }

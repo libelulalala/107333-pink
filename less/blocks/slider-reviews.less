@@ -1,3 +1,61 @@
 .slider-reviews {
-  outline: 2px solid green;
+}
+
+.slider-reviews__wrapper {
+  .container;
+  .clearfix;
+}
+
+.slider-reviews__toggle {
+  display: none;
+}
+
+.slider-reviews__items {
+}
+
+.slider-reviews__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.slider-reviews__item:nth-child(n+2){
+  display: none;
+}
+
+.slider-reviews__title {
+}
+.slider-reviews__title small{
+  display: none;
+}
+.slider-reviews__controls {
+}
+
+.slider-reviews__control {
+}
+
+.slider-reviews__control--1 {
+}
+
+.slider-reviews__control--2 {
+}
+
+.slider-reviews__control--3 {
+}
+
+@media @tablet-widths {
+  .slider-reviews__item {
+    flex-direction: column-reverse;
+  }
+  .slider-reviews__title small{
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .slider-reviews__item {
+    flex-direction: column-reverse;
+  }
+  .slider-reviews__title small{
+    display: block;
+  }
 }
